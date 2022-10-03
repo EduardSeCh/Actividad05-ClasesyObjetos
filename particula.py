@@ -14,16 +14,14 @@ class Particula():
         
     def __str__(self) -> str:
         return(
-            "Id: \t"+ str(self.__id)+'\n'+
+            "Id: \t\t"+ str(self.__id)+'\n'+
             "origen_x: \t"+ str(self.__origen_x)+'\n'+
             "origen_y: \t"+ str(self.__origen_y)+'\n'+
             "destino_x: \t"+ str(self.__destino_x)+'\n'+
             "destino_y: \t"+ str(self.__destino_y)+'\n'+
             "velocidad: \t"+ str(self.__velocidad)+'\n'+
-            "red: \t"+ str(self.__red)+'\n'+
-            "green: \t"+ str(self.__green)+'\n'+
-            "blue: \t"+ str(self.__blue)+'\n'+
+            "red: \t\t"+ str(self.__red)+'\n'+
+            "green: \t\t"+ str(self.__green)+'\n'+
+            "blue: \t\t"+ str(self.__blue)+'\n'+
             "distancia: \t"+ str(self.__distancia)+'\n')
         
-preuba = Particula(1,2,3,4,5,6,7,8,9)
-print(preuba)
