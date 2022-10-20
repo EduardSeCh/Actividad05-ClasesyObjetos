@@ -1,4 +1,5 @@
-from algoritmos import distancia_euclidiana
+from .algoritmos import distancia_euclidiana
+#.algoritmos para que la carpeta principal la tome
 class Particula():
     def __init__(self,id=0,origen_x=0,origen_y=0,destino_x=0,destino_y=0,velocidad=0,red=0,green=0,blue=0):
         self.__id = id
@@ -14,14 +15,14 @@ class Particula():
         
     def __str__(self) -> str:
         return(
-            "Id: \t\t"+ str(self.__id)+'\n'+
+            "Id: \t"+ str(self.__id)+'\n'+
             "origen_x: \t"+ str(self.__origen_x)+'\n'+
             "origen_y: \t"+ str(self.__origen_y)+'\n'+
             "destino_x: \t"+ str(self.__destino_x)+'\n'+
             "destino_y: \t"+ str(self.__destino_y)+'\n'+
             "velocidad: \t"+ str(self.__velocidad)+'\n'+
-            "red: \t\t"+ str(self.__red)+'\n'+
-            "green: \t\t"+ str(self.__green)+'\n'+
-            "blue: \t\t"+ str(self.__blue)+'\n'+
+            "red: \t"+ str(self.__red)+'\n'+
+            "green: \t"+ str(self.__green)+'\n'+
+            "blue: \t"+ str(self.__blue)+'\n'+
             "distancia: \t"+ str(self.__distancia)+'\n')
         
