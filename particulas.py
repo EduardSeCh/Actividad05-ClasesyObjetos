@@ -18,3 +18,4 @@ class Particulas:
         return "".join(
             str(particula) + "\n" for particula in self.__particulas
         )
+    #Cambio x de prueba
