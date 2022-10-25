@@ -15,7 +15,7 @@ class Particula():
         
     def __str__(self) -> str:
         return(
-            "Id: \t"+ str(self.__id)+'\n'+
+            "id: \t"+ str(self.__id)+'\n'+
             "origen_x: \t"+ str(self.__origen_x)+'\n'+
             "origen_y: \t"+ str(self.__origen_y)+'\n'+
             "destino_x: \t"+ str(self.__destino_x)+'\n'+
@@ -25,4 +25,16 @@ class Particula():
             "green: \t"+ str(self.__green)+'\n'+
             "blue: \t"+ str(self.__blue)+'\n'+
             "distancia: \t"+ str(self.__distancia)+'\n')
-        
+    
+    def to_dict(self):
+        return {
+            "id": self.__id,
+            "origen_x": self.__origen_x,
+            "origen_y": self.__origen_y,
+            "destino_x": self.__destino_x,
+            "destino_y": self.__destino_y,
+            "velocidad": self.__velocidad,
+            "red": self.__red,
+            "green": self.__green,
+            "blue": self.__blue
+        }

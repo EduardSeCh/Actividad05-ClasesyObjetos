@@ -1,3 +1,4 @@
+import json
 from .particula import Particula
 #.partiucla para que la carpeta principal la tome
 class Particulas:
@@ -18,4 +19,22 @@ class Particulas:
         return "".join(
             str(particula) + "\n" for particula in self.__particulas
         )
-    #Cambio x de prueba
+    #Archivo
+    def guardar(self,ubicacion):
+        try:
+            with open(ubicacion, 'w') as archivo:
+                lista = [particula.to_dict() for particula in self.__particulas]
+                print(lista)
+                json.dump(lista,archivo,indent=5)
+            return 1
+        except:
+            return 0
+        
+    def abrir(self,ubicacion):
+        try:
+            with open(ubicacion, 'r') as archivo:
+                lista = json.load(archivo)
+                self.__particulas = [Particula(**particula) for particula in lista]
+            return 1
+        except:
+            return 0    
