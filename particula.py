@@ -27,7 +27,7 @@ class Particula():
     
     @property
     def destino_x(self):
-        return self.__origen_x
+        return self.__destino_x
     
     @property
     def destino_y(self):
